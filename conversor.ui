@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConversorDeTermperaturas</class>
+ <widget class="QDialog" name="ConversorDeTermperaturas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>505</width>
+    <height>558</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Conversor</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Recursos.qrc">
+    <normaloff>:/Recursos/termometro.png</normaloff>:/Recursos/termometro.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qconicalgradient(cx:0, cy:0, angle:234.5, stop:0.128492 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:reflect, x1:0.073, y1:1, x2:1, y2:1, stop:0.0726257 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_6">
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="font">
+      <font>
+       <family>Gill Sans Ultra Bold</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+color: rgb(255, 255, 255);
+gridline-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(255, 255, 255, 255), stop:0.373979 rgba(255, 255, 255, 255), stop:0.373991 rgba(33, 30, 255, 255), stop:0.624018 rgba(33, 30, 255, 255), stop:0.624043 rgba(255, 0, 0, 255), stop:1 rgba(255, 0, 0, 255));</string>
+     </property>
+     <property name="text">
+      <string>CONVERSOR DE TEMPERATURAS</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(70, 70, 70);</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(15, 15, 15);</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(186, 189, 182);
+color: rgb(0, 0, 0);
+font: 16pt &quot;Ubuntu&quot;;
+font: 75 11pt &quot;Ubuntu Condensed&quot;;
+font: 75 11pt &quot;Ubuntu Condensed&quot;;</string>
+           </property>
+           <property name="title">
+            <string>Grados Farenheit</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLCDNumber" name="lcdfa">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 87, 83);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDial" name="dialfahr">
+              <property name="styleSheet">
+               <string notr="true">border-color: rgb(164, 0, 0);
+background-color: rgb(78, 154, 6);
+background-color: rgb(92, 53, 102);</string>
+              </property>
+              <property name="maximum">
+               <number>210</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBoxcen">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(186, 189, 182);
+selection-color: rgb(46, 52, 54);
+color: rgb(0, 0, 0);
+font: 16pt &quot;Ubuntu&quot;;
+font: 75 11pt &quot;Ubuntu Condensed&quot;;</string>
+           </property>
+           <property name="title">
+            <string>Grados Centigrados</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLCDNumber" name="lcdcen">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 87, 83);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDial" name="dialcent">
+              <property name="cursor">
+               <cursorShape>ClosedHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(206, 92, 0);
+border-bottom-color: rgb(92, 53, 102);
+border-color: rgb(164, 0, 0);</string>
+              </property>
+              <property name="minimum">
+               <number>-18</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="Kelvin">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>11</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(186, 189, 182);
+selection-color: rgb(46, 52, 54);
+color: rgb(0, 0, 0);
+font: 16pt &quot;Ubuntu&quot;;
+font: 75 11pt &quot;Ubuntu Condensed&quot;;</string>
+           </property>
+           <property name="title">
+            <string>Grados Kelvin</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLCDNumber" name="lcdkelv">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 87, 83);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDial" name="dialkel">
+              <property name="cursor">
+               <cursorShape>ClosedHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(54, 106, 100);</string>
+              </property>
+              <property name="minimum">
+               <number>255</number>
+              </property>
+              <property name="maximum">
+               <number>372</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://www.flaticon.es/iconos-gratis/temperatura&quot;&gt;&lt;span style=&quot; font-size:7pt; font-style:italic; text-decoration: underline; color:#ffffff;&quot;&gt;Temperatura iconos creados por Freepik - Flaticon&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <family>Gill Sans Ultra Bold</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+color: rgb(255, 255, 255);
+gridline-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(255, 255, 255, 255), stop:0.373979 rgba(255, 255, 255, 255), stop:0.373991 rgba(33, 30, 255, 255), stop:0.624018 rgba(33, 30, 255, 255), stop:0.624043 rgba(255, 0, 0, 255), stop:1 rgba(255, 0, 0, 255));</string>
+     </property>
+     <property name="text">
+      <string>.&gt;TABLA DE CONVERSIONES</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGraphicsView" name="graphicsView">
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/Recursos/23.png);</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="Recursos.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>dialfahr</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdfa</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>130</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>130</x>
+     <y>83</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dialcent</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdcen</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>168</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>83</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dialkel</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdkelv</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>528</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>528</x>
+     <y>61</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
